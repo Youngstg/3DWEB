@@ -209,10 +209,6 @@ section {
 }
 
 /* DESCRIPTION SECTION */
-/* #description {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-} */
-
 .section-title {
     font-size: 3rem;
     font-weight: 600;
@@ -251,10 +247,6 @@ section {
 }
 
 /* SKILLS SECTION */
-/* #skills {
-    background: #0a0a0a;
-} */
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -304,10 +296,6 @@ section {
 }
 
 /* PORTFOLIO SECTION */
-/* #portfolio {
-    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-} */
-
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -364,48 +352,106 @@ section {
 }
 
 /* CONTACT SECTION */
-/* #contact {
-    background: #0a0a0a;
-} */
-
 .contact-container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
-.contact-card {
+.contact-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-}
-
-.contact-icon {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #a7a7a7;
+    color: white;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
 }
 
-.contact-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #e7e7e7;
+.contact-icon-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    z-index: -1;
 }
 
-.contact-card p {
-    color: #a7a7a7;
+/* Email hover effect */
+.contact-icon-link.email::before {
+    background: linear-gradient(135deg, #ea4335, #c5221f);
+}
+
+.contact-icon-link.email:hover {
+    color: white;
+    border-color: #ea4335;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(234, 67, 53, 0.4);
+}
+
+/* LinkedIn hover effect */
+.contact-icon-link.linkedin::before {
+    background: linear-gradient(135deg, #0077b5, #005885);
+}
+
+.contact-icon-link.linkedin:hover {
+    color: white;
+    border-color: #0077b5;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 119, 181, 0.4);
+}
+
+/* GitHub hover effect */
+.contact-icon-link.github::before {
+    background: linear-gradient(135deg, #333, #24292e);
+}
+
+.contact-icon-link.github:hover {
+    color: white;
+    border-color: #333;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(51, 51, 51, 0.4);
+}
+
+/* WhatsApp hover effect */
+.contact-icon-link.whatsapp::before {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.contact-icon-link.whatsapp:hover {
+    color: white;
+    border-color: #25d366;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+}
+
+.contact-icon-link:hover::before {
+    transform: scale(1);
+}
+
+.contact-icon-link:hover {
+    transform: translateY(-10px) scale(1.1);
 }
 
 /* RESPONSIVE */
@@ -439,8 +485,17 @@ section {
     .section-title {
         font-size: 2rem;
     }
-}
 
+    .contact-icons {
+        gap: 2rem;
+    }
+
+    .contact-icon-link {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+}
 
 section:not(#home)::before {
     content: '';

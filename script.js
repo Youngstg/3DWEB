@@ -129,12 +129,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Header background opacity on scroll
+    // Enhanced header background opacity and blur on scroll
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const opacity = Math.min(scrolled / 100, 0.95);
+        const blurAmount = Math.min(scrolled / 10, 25);
+        
         header.style.background = `rgba(0, 0, 0, ${opacity})`;
+        header.style.backdropFilter = `blur(${blurAmount}px)`;
+        header.style.webkitBackdropFilter = `blur(${blurAmount}px)`;
+        
+        // Add stronger border when scrolled
+        if (scrolled > 50) {
+            header.style.borderBottom = '1px solid rgba(255, 255, 255, 0.2)';
+            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+        } else {
+            header.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+            header.style.boxShadow = 'none';
+        }
     });
 
     // Add typing effect to main title

@@ -42,7 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-    z-index: 999;
+    z-index: 1000;
     border-bottom: 1px solid #2a2a2a;
 }
 
@@ -72,7 +72,7 @@ nav a:hover, nav a.active {
 }
 
 .btn {
-    background-color: #a7a7a7;
+    background-color: #ffffff;
     color: black;
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -84,7 +84,9 @@ nav a:hover, nav a.active {
 }
 
 .btn:hover {
-    background-color: white;
+    background-color: rgb(94, 29, 110);
+    color: white;
+    border: #ffffff;
 }
 
 /* SECTIONS */
@@ -207,9 +209,9 @@ section {
 }
 
 /* DESCRIPTION SECTION */
-#description {
+/* #description {
     background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-}
+} */
 
 .section-title {
     font-size: 3rem;
@@ -249,9 +251,9 @@ section {
 }
 
 /* SKILLS SECTION */
-#skills {
+/* #skills {
     background: #0a0a0a;
-}
+} */
 
 .skills-grid {
     display: grid;
@@ -302,9 +304,9 @@ section {
 }
 
 /* PORTFOLIO SECTION */
-#portfolio {
+/* #portfolio {
     background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-}
+} */
 
 .portfolio-grid {
     display: grid;
@@ -362,9 +364,9 @@ section {
 }
 
 /* CONTACT SECTION */
-#contact {
+/* #contact {
     background: #0a0a0a;
-}
+} */
 
 .contact-container {
     max-width: 800px;
@@ -437,4 +439,21 @@ section {
     .section-title {
         font-size: 2rem;
     }
+}
+
+
+section:not(#home)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.1) 20%, 
+        rgba(255, 255, 255, 0.3) 50%, 
+        rgba(255, 255, 255, 0.1) 80%, 
+        transparent 100%
+    );
 }

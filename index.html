@@ -3,44 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lucky Immanuel Sitanggang - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class= "image-gradient" src="gradient.png" alt="gradient">
+    <img class="image-gradient" src="gradient.png" alt="gradient">
     <div class="layer-blur"></div>
 
-    <div class="container">
-        <header>
-            <h1 class="logo">Clover Net</h1>
-            <nav>
-                <a href="">Description</a>
-                <a href="">Skill</a>
-                <a href="">Porto</a>
-                <a href="">Contact</a>
-            </nav>
+    <header>
+        <h1 class="logo">Clover Net</h1>
+        <nav>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#description" class="nav-link">Description</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button class="btn">Market</button>
+    </header>
 
-            <button class="btn">Market</button>
-        </header>
+    <!-- HOME SECTION -->
+    <section id="home">
+        <div class="home-content">
+            <div class="tag-box">
+                <div class="tag">Lucky Immanuel Sitanggang ⚡</div>
+            </div>
+            <h1>EMAIL for us <br>DEVELOPERS</h1>
+            <p class="description">Saya adalah seorang Software Developer dan AI Engineer dengan keahlian dalam membangun aplikasi web dan mengembangkan model AI untuk berbagai kebutuhan industri, mulai dari Computer Vision hingga Natural Language Processing. Saya berkomitmen untuk terus belajar dan berkontribusi dalam dunia teknologi.</p>
+            <div class="buttons">
+                <a href="#contact" class="btn-get">Email for more →</a>
+                <a href="#portfolio" class="btn-sign">Get Started →</a>
+            </div>
+        </div>
+        <spline-viewer class="object-3d" url="https://prod.spline.design/2Amz1jTn6GGAeTl4/scene.splinecode"></spline-viewer>
+    </section>
 
-        <main>
-            <div class="content">
-                <div class="tag-box">
-                    <div class="tag">Lucky Immanuel Sitanggang &wedbar;</div>
+    <!-- DESCRIPTION SECTION -->
+    <section id="description">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="description-grid">
+                <div class="description-card">
+                    <h3>🚀 Passion for Technology</h3>
+                    <p>Saya memiliki passion yang mendalam dalam teknologi, khususnya dalam pengembangan software dan artificial intelligence. Setiap hari adalah kesempatan untuk belajar hal baru dan mengaplikasikan teknologi terdepan.</p>
                 </div>
-                <h1>EMAIL for us <br>DEVELOPERS</h1>
-                <p class="description">Saya adalah seorang Software Developer dan AI Engineer dengan keahlian dalam membangun aplikasi web dan mengembangkan model AI untuk berbagai kebutuhan industri, mulai dari Computer Vision hingga Natural Language Processing. Saya berkomitmen untuk terus belajar dan berkontribusi dalam dunia teknologi.
-                </p>
-                <div class="buttons">
-                    <a href="#" class="btn-get">Email for more &gt;</a>
-                    <a href="#" class="btn-sign">GetStarted &gt;</a>
+                <div class="description-card">
+                    <h3>💡 Problem Solver</h3>
+                    <p>Dengan pengalaman dalam berbagai proyek, saya telah mengembangkan kemampuan untuk menganalisis masalah kompleks dan memberikan solusi yang efektif dan inovatif.</p>
+                </div>
+                <div class="description-card">
+                    <h3>🎯 Goal Oriented</h3>
+                    <p>Saya selalu berorientasi pada hasil dan berkomitmen untuk memberikan deliverable berkualitas tinggi sesuai dengan timeline yang telah ditentukan.</p>
+                </div>
+                <div class="description-card">
+                    <h3>🌱 Continuous Learning</h3>
+                    <p>Teknologi terus berkembang, dan saya percaya bahwa pembelajaran berkelanjutan adalah kunci untuk tetap relevan dan kompetitif di industri teknologi.</p>
                 </div>
             </div>
-        </main>
-        <spline-viewer class= "object-3d"url="https://prod.spline.design/2Amz1jTn6GGAeTl4/scene.splinecode"></spline-viewer>
-    </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian Saya</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                    <small>HTML, CSS, JavaScript, React, Node.js</small>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                    <small>Python, TensorFlow, PyTorch, OpenCV</small>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                    <small>Flutter, React Native, Dart</small>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Database Management</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                    <small>MySQL, PostgreSQL, MongoDB</small>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud Computing</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                    <small>AWS, Google Cloud, Docker</small>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-width="65"></div>
+                    </div>
+                    <small>Figma, Adobe XD, Photoshop</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio Saya</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">🌐</div>
+                    <div class="portfolio-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Platform e-commerce modern dengan fitur AI recommendation engine dan payment gateway terintegrasi.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">📱</div>
+                    <div class="portfolio-content">
+                        <h3>Healthcare Mobile App</h3>
+                        <p>Aplikasi mobile untuk monitoring kesehatan dengan integrasi IoT devices dan AI diagnosis assistant.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">🤖</div>
+                    <div class="portfolio-content">
+                        <h3>Computer Vision System</h3>
+                        <p>Sistem computer vision untuk quality control di industri manufaktur dengan akurasi 98%.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">💬</div>
+                    <div class="portfolio-content">
+                        <h3>AI Chatbot Platform</h3>
+                        <p>Platform chatbot berbasis NLP untuk customer service dengan dukungan multi-bahasa.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p style="font-size: 1.2rem; color: #a7a7a7; margin-bottom: 2rem;">
+                    Mari berkolaborasi dalam proyek-proyek teknologi yang menantang dan berdampak positif!
+                </p>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>lucky.sitanggang@email.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/luckysitanggang</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🐙</div>
+                        <h3>GitHub</h3>
+                        <p>github.com/luckysitanggang</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>+62 812 3456 7890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.9/build/spline-viewer.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>

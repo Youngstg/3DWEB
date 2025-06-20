@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky Immanuel Sitanggang - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/Lanyard/Lanyard.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -44,22 +45,31 @@
     <section id="description">
         <div class="container">
             <h2 class="section-title">Tentang Saya</h2>
-            <div class="description-grid">
-                <div class="description-card">
-                    <h3>🚀 Passion for Technology</h3>
-                    <p>Saya memiliki passion yang mendalam dalam teknologi, khususnya dalam pengembangan software dan artificial intelligence. Setiap hari adalah kesempatan untuk belajar hal baru dan mengaplikasikan teknologi terdepan.</p>
+            <div class="description-content">
+                <div class="description-left">
+                    <div class="description-grid">
+                        <div class="description-card">
+                            <h3>🚀 Passion for Technology</h3>
+                            <p>Saya memiliki passion yang mendalam dalam teknologi, khususnya dalam pengembangan software dan artificial intelligence. Setiap hari adalah kesempatan untuk belajar hal baru dan mengaplikasikan teknologi terdepan.</p>
+                        </div>
+                        <div class="description-card">
+                            <h3>💡 Problem Solver</h3>
+                            <p>Dengan pengalaman dalam berbagai proyek, saya telah mengembangkan kemampuan untuk menganalisis masalah kompleks dan memberikan solusi yang efektif dan inovatif.</p>
+                        </div>
+                        <div class="description-card">
+                            <h3>🎯 Goal Oriented</h3>
+                            <p>Saya selalu berorientasi pada hasil dan berkomitmen untuk memberikan deliverable berkualitas tinggi sesuai dengan timeline yang telah ditentukan.</p>
+                        </div>
+                        <div class="description-card">
+                            <h3>🌱 Continuous Learning</h3>
+                            <p>Teknologi terus berkembang, dan saya percaya bahwa pembelajaran berkelanjutan adalah kunci untuk tetap relevan dan kompetitif di industri teknologi.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="description-card">
-                    <h3>💡 Problem Solver</h3>
-                    <p>Dengan pengalaman dalam berbagai proyek, saya telah mengembangkan kemampuan untuk menganalisis masalah kompleks dan memberikan solusi yang efektif dan inovatif.</p>
-                </div>
-                <div class="description-card">
-                    <h3>🎯 Goal Oriented</h3>
-                    <p>Saya selalu berorientasi pada hasil dan berkomitmen untuk memberikan deliverable berkualitas tinggi sesuai dengan timeline yang telah ditentukan.</p>
-                </div>
-                <div class="description-card">
-                    <h3>🌱 Continuous Learning</h3>
-                    <p>Teknologi terus berkembang, dan saya percaya bahwa pembelajaran berkelanjutan adalah kunci untuk tetap relevan dan kompetitif di industri teknologi.</p>
+                <div class="description-right">
+                    <div id="lanyard-container" class="lanyard-wrapper">
+                        <canvas id="lanyard-canvas"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -209,7 +219,11 @@
         </div>
     </section>
 
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/5.0.0/cannon.min.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.9/build/spline-viewer.js"></script>
+    <script src="assets/Lanyard/Lanyard.jsx"></script>
     <script src="script.js"></script>
 </body>
 </html>

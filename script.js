@@ -168,4 +168,29 @@ document.addEventListener('DOMContentLoaded', function() {
         // Start typing effect after a short delay
         setTimeout(typeWriter, 1000);
     }
+
+    // 3D object visibility and interaction control
+    const splineViewer = document.querySelector('.object-3d');
+    let isSplineVisible = false;
+    
+    if (splineViewer) {
+        const splineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isSplineVisible = entry.isIntersecting;
+                
+                if (isSplineVisible) {
+                    // Enable mouse events when visible
+                    splineViewer.style.pointerEvents = 'auto';
+                } else {
+                    // Disable mouse events when not visible
+                    splineViewer.style.pointerEvents = 'none';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px'
+        });
+        
+        splineObserver.observe(splineViewer);
+    }
 });
